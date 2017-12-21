@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3295C8AB2C03AB7348A673FE /* Pods_ComediansContestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0184B83AD7DAD5449D806324 /* Pods_ComediansContestTests.framework */; };
+		96B44C1D1FEAB38A00A61E9D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B44C1C1FEAB38A00A61E9D /* FeedViewController.swift */; };
 		96BADE4D1FE6BB8400DBEC9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BADE4C1FE6BB8400DBEC9A /* AppDelegate.swift */; };
 		96BADE521FE6BB8400DBEC9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96BADE501FE6BB8400DBEC9A /* Main.storyboard */; };
 		96BADE541FE6BB8400DBEC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96BADE531FE6BB8400DBEC9A /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		19B9A0CA3A9230E978EC1DB9 /* Pods-ComediansContestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComediansContestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComediansContestUITests/Pods-ComediansContestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1CD5CD0AF92F4C7E99107807 /* Pods_ComediansContestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComediansContestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		446364A02F78E8CA6484BD82 /* Pods-ComediansContestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComediansContestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComediansContestTests/Pods-ComediansContestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		96B44C1C1FEAB38A00A61E9D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		96BADE491FE6BB8400DBEC9A /* ComediansContest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComediansContest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96BADE4C1FE6BB8400DBEC9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96BADE511FE6BB8400DBEC9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,6 +89,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96B44C191FEAB34100A61E9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96B44C1C1FEAB38A00A61E9D /* FeedViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96B44C1A1FEAB34900A61E9D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		96B44C1B1FEAB35100A61E9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		96BADE401FE6BB8400DBEC9A = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +136,9 @@
 		96BADE4B1FE6BB8400DBEC9A /* ComediansContest */ = {
 			isa = PBXGroup;
 			children = (
+				96B44C1B1FEAB35100A61E9D /* Model */,
+				96B44C1A1FEAB34900A61E9D /* ViewModel */,
+				96B44C191FEAB34100A61E9D /* View */,
 				96BADE4C1FE6BB8400DBEC9A /* AppDelegate.swift */,
 				96BADE501FE6BB8400DBEC9A /* Main.storyboard */,
 				96BADE531FE6BB8400DBEC9A /* Assets.xcassets */,
@@ -404,6 +431,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ComediansContest/Pods-ComediansContest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -411,6 +439,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -460,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B44C1D1FEAB38A00A61E9D /* FeedViewController.swift in Sources */,
 				96BADE4D1FE6BB8400DBEC9A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

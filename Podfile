@@ -9,6 +9,8 @@ target 'ComediansContest' do
   pod 'RxCocoa', '~> 4.0'
   pod 'RxDataSources', '~> 3.0'
 
+  pod 'IGListKit', '~> 3.1'
+
   # Firebase
   #pod 'Firebase/Core'
   #pod 'Firebase/Auth'
