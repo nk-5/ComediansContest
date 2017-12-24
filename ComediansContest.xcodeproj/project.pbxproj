@@ -97,12 +97,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		96B44C191FEAB34100A61E9D /* View */ = {
+		9654A29B1FF00082001CC27E /* Feed */ = {
 			isa = PBXGroup;
 			children = (
 				9654A2901FEE8FE7001CC27E /* FeedSectionController.swift */,
 				9654A2971FEEB1DE001CC27E /* FeedCell.xib */,
 				9654A2991FEFDC52001CC27E /* FeedCell.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		96B44C191FEAB34100A61E9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9654A29B1FF00082001CC27E /* Feed */,
 			);
 			path = View;
 			sourceTree = "<group>";
