@@ -16,7 +16,7 @@ class FeedSectionController: ListSectionController {
     }
 
     override func sizeForItem(at index: Int) -> CGSize {
-        return CGSize.init(width: (collectionContext?.containerSize.width)!, height: 100)
+        return CGSize.init(width: (collectionContext?.containerSize.width)!, height: 300)
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {

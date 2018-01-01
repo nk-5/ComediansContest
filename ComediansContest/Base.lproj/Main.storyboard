@@ -77,7 +77,7 @@
         <!--New-->
         <scene sceneID="YU8-fI-ZyW">
             <objects>
-                <viewController id="F4Z-Hc-VhC" sceneMemberID="viewController">
+                <viewController id="F4Z-Hc-VhC" customClass="FeedViewController" customModule="ComediansContest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7dX-3J-bbX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
