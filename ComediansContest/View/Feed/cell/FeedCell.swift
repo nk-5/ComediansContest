@@ -5,7 +5,7 @@
 
 import UIKit
 
-class FeedImageCell: UICollectionViewCell {
+class FeedCell: UICollectionViewCell {
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var contentsView: UIView!
     @IBOutlet weak var title: UILabel!

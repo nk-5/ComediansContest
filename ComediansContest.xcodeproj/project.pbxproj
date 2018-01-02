@@ -14,8 +14,6 @@
 		9654A2981FEEB1DE001CC27E /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9654A2971FEEB1DE001CC27E /* FeedCell.xib */; };
 		9654A29A1FEFDC52001CC27E /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9654A2991FEFDC52001CC27E /* FeedCell.swift */; };
 		9654A29D1FF000D6001CC27E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9654A29C1FF000D6001CC27E /* FeedViewController.swift */; };
-		96952D491FFB1AE2008D1CA4 /* FeedVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96952D481FFB1AE2008D1CA4 /* FeedVideoCell.xib */; };
-		96952D4D1FFB1B78008D1CA4 /* FeedVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96952D4C1FFB1B78008D1CA4 /* FeedVideoCell.swift */; };
 		96952D4F1FFB5D17008D1CA4 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96952D4E1FFB5D17008D1CA4 /* Content.swift */; };
 		96BADE4D1FE6BB8400DBEC9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BADE4C1FE6BB8400DBEC9A /* AppDelegate.swift */; };
 		96BADE521FE6BB8400DBEC9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96BADE501FE6BB8400DBEC9A /* Main.storyboard */; };
@@ -56,8 +54,6 @@
 		9654A2971FEEB1DE001CC27E /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
 		9654A2991FEFDC52001CC27E /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		9654A29C1FF000D6001CC27E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		96952D481FFB1AE2008D1CA4 /* FeedVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedVideoCell.xib; sourceTree = "<group>"; };
-		96952D4C1FFB1B78008D1CA4 /* FeedVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVideoCell.swift; sourceTree = "<group>"; };
 		96952D4E1FFB5D17008D1CA4 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		96BADE491FE6BB8400DBEC9A /* ComediansContest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComediansContest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96BADE4C1FE6BB8400DBEC9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,30 +104,20 @@
 		9654A29B1FF00082001CC27E /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				96952D4B1FFB1B4C008D1CA4 /* movie */,
-				96952D4A1FFB1B09008D1CA4 /* image */,
+				96952D4A1FFB1B09008D1CA4 /* cell */,
 				9654A2901FEE8FE7001CC27E /* FeedSectionController.swift */,
 				9654A29C1FF000D6001CC27E /* FeedViewController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
 		};
-		96952D4A1FFB1B09008D1CA4 /* image */ = {
+		96952D4A1FFB1B09008D1CA4 /* cell */ = {
 			isa = PBXGroup;
 			children = (
 				9654A2991FEFDC52001CC27E /* FeedCell.swift */,
 				9654A2971FEEB1DE001CC27E /* FeedCell.xib */,
 			);
-			path = image;
-			sourceTree = "<group>";
-		};
-		96952D4B1FFB1B4C008D1CA4 /* movie */ = {
-			isa = PBXGroup;
-			children = (
-				96952D481FFB1AE2008D1CA4 /* FeedVideoCell.xib */,
-				96952D4C1FFB1B78008D1CA4 /* FeedVideoCell.swift */,
-			);
-			path = movie;
+			path = cell;
 			sourceTree = "<group>";
 		};
 		96B44C191FEAB34100A61E9D /* View */ = {
@@ -355,7 +341,6 @@
 			files = (
 				96BADE571FE6BB8400DBEC9A /* LaunchScreen.storyboard in Resources */,
 				9654A2981FEEB1DE001CC27E /* FeedCell.xib in Resources */,
-				96952D491FFB1AE2008D1CA4 /* FeedVideoCell.xib in Resources */,
 				96BADE541FE6BB8400DBEC9A /* Assets.xcassets in Resources */,
 				96BADE521FE6BB8400DBEC9A /* Main.storyboard in Resources */,
 			);
@@ -554,7 +539,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9654A2951FEE915A001CC27E /* User.swift in Sources */,
-				96952D4D1FFB1B78008D1CA4 /* FeedVideoCell.swift in Sources */,
 				9654A29A1FEFDC52001CC27E /* FeedCell.swift in Sources */,
 				96952D4F1FFB5D17008D1CA4 /* Content.swift in Sources */,
 				96BADE4D1FE6BB8400DBEC9A /* AppDelegate.swift in Sources */,
