@@ -8,11 +8,11 @@ import IGListKit
 
 class FeedViewController: UIViewController {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+
     lazy var adapter: ListAdapter = {
         ListAdapter(updater: ListAdapterUpdater(), viewController: self, workingRangeSize: 0)
     }()
-
-    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
 
     override func viewDidLoad() {
         super.viewDidLoad()
