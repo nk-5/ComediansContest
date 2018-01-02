@@ -11,8 +11,8 @@
 		9654A2911FEE8FE7001CC27E /* FeedSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9654A2901FEE8FE7001CC27E /* FeedSectionController.swift */; };
 		9654A2931FEE9015001CC27E /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9654A2921FEE9015001CC27E /* Feed.swift */; };
 		9654A2951FEE915A001CC27E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9654A2941FEE915A001CC27E /* User.swift */; };
-		9654A2981FEEB1DE001CC27E /* FeedImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9654A2971FEEB1DE001CC27E /* FeedImageCell.xib */; };
-		9654A29A1FEFDC52001CC27E /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9654A2991FEFDC52001CC27E /* FeedImageCell.swift */; };
+		9654A2981FEEB1DE001CC27E /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9654A2971FEEB1DE001CC27E /* FeedCell.xib */; };
+		9654A29A1FEFDC52001CC27E /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9654A2991FEFDC52001CC27E /* FeedCell.swift */; };
 		9654A29D1FF000D6001CC27E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9654A29C1FF000D6001CC27E /* FeedViewController.swift */; };
 		96952D491FFB1AE2008D1CA4 /* FeedVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96952D481FFB1AE2008D1CA4 /* FeedVideoCell.xib */; };
 		96952D4D1FFB1B78008D1CA4 /* FeedVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96952D4C1FFB1B78008D1CA4 /* FeedVideoCell.swift */; };
@@ -53,8 +53,8 @@
 		9654A2901FEE8FE7001CC27E /* FeedSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSectionController.swift; sourceTree = "<group>"; };
 		9654A2921FEE9015001CC27E /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		9654A2941FEE915A001CC27E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		9654A2971FEEB1DE001CC27E /* FeedImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedImageCell.xib; sourceTree = "<group>"; };
-		9654A2991FEFDC52001CC27E /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
+		9654A2971FEEB1DE001CC27E /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
+		9654A2991FEFDC52001CC27E /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		9654A29C1FF000D6001CC27E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		96952D481FFB1AE2008D1CA4 /* FeedVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedVideoCell.xib; sourceTree = "<group>"; };
 		96952D4C1FFB1B78008D1CA4 /* FeedVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVideoCell.swift; sourceTree = "<group>"; };
@@ -119,8 +119,8 @@
 		96952D4A1FFB1B09008D1CA4 /* image */ = {
 			isa = PBXGroup;
 			children = (
-				9654A2991FEFDC52001CC27E /* FeedImageCell.swift */,
-				9654A2971FEEB1DE001CC27E /* FeedImageCell.xib */,
+				9654A2991FEFDC52001CC27E /* FeedCell.swift */,
+				9654A2971FEEB1DE001CC27E /* FeedCell.xib */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -354,7 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96BADE571FE6BB8400DBEC9A /* LaunchScreen.storyboard in Resources */,
-				9654A2981FEEB1DE001CC27E /* FeedImageCell.xib in Resources */,
+				9654A2981FEEB1DE001CC27E /* FeedCell.xib in Resources */,
 				96952D491FFB1AE2008D1CA4 /* FeedVideoCell.xib in Resources */,
 				96BADE541FE6BB8400DBEC9A /* Assets.xcassets in Resources */,
 				96BADE521FE6BB8400DBEC9A /* Main.storyboard in Resources */,
@@ -555,7 +555,7 @@
 			files = (
 				9654A2951FEE915A001CC27E /* User.swift in Sources */,
 				96952D4D1FFB1B78008D1CA4 /* FeedVideoCell.swift in Sources */,
-				9654A29A1FEFDC52001CC27E /* FeedImageCell.swift in Sources */,
+				9654A29A1FEFDC52001CC27E /* FeedCell.swift in Sources */,
 				96952D4F1FFB5D17008D1CA4 /* Content.swift in Sources */,
 				96BADE4D1FE6BB8400DBEC9A /* AppDelegate.swift in Sources */,
 				9654A2931FEE9015001CC27E /* Feed.swift in Sources */,
