@@ -29,7 +29,7 @@ class FeedSectionController: ListSectionController {
             cell.imageView.image = feed.content.image
             return cell
         case .video:
-            let cell: FeedMovieCell = collectionContext?.dequeueReusableCell(withNibName: "FeedMovieCell", bundle: nil, for: self, at: index) as! FeedMovieCell
+            let cell: FeedVideoCell = collectionContext?.dequeueReusableCell(withNibName: "FeedMovieCell", bundle: nil, for: self, at: index) as! FeedVideoCell
             let asset: NSDataAsset = NSDataAsset(name: "movie")!
             let videoURL: URL = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("gacky-movie.mov")
             try! asset.data.write(to: videoURL)

@@ -1,10 +1,10 @@
 //
-//  FeedMovieCell.swift
+//  FeedVideoCell.swift
 //  ComediansContest
 //
 
 import UIKit
 
-class FeedMovieCell: UICollectionViewCell {
+class FeedVideoCell: UICollectionViewCell {
     @IBOutlet weak var movie: UIView!
 }
