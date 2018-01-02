@@ -6,5 +6,6 @@
 import UIKit
 
 class FeedVideoCell: UICollectionViewCell {
-    @IBOutlet weak var movie: UIView!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var video: UIView!
 }
