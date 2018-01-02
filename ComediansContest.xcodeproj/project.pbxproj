@@ -16,6 +16,7 @@
 		9654A29D1FF000D6001CC27E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9654A29C1FF000D6001CC27E /* FeedViewController.swift */; };
 		96952D491FFB1AE2008D1CA4 /* FeedMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96952D481FFB1AE2008D1CA4 /* FeedMovieCell.xib */; };
 		96952D4D1FFB1B78008D1CA4 /* FeedMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96952D4C1FFB1B78008D1CA4 /* FeedMovieCell.swift */; };
+		96952D4F1FFB5D17008D1CA4 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96952D4E1FFB5D17008D1CA4 /* Content.swift */; };
 		96BADE4D1FE6BB8400DBEC9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BADE4C1FE6BB8400DBEC9A /* AppDelegate.swift */; };
 		96BADE521FE6BB8400DBEC9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96BADE501FE6BB8400DBEC9A /* Main.storyboard */; };
 		96BADE541FE6BB8400DBEC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96BADE531FE6BB8400DBEC9A /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		9654A29C1FF000D6001CC27E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		96952D481FFB1AE2008D1CA4 /* FeedMovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedMovieCell.xib; sourceTree = "<group>"; };
 		96952D4C1FFB1B78008D1CA4 /* FeedMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMovieCell.swift; sourceTree = "<group>"; };
+		96952D4E1FFB5D17008D1CA4 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		96BADE491FE6BB8400DBEC9A /* ComediansContest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComediansContest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96BADE4C1FE6BB8400DBEC9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96BADE511FE6BB8400DBEC9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			children = (
 				9654A2921FEE9015001CC27E /* Feed.swift */,
 				9654A2941FEE915A001CC27E /* User.swift */,
+				96952D4E1FFB5D17008D1CA4 /* Content.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				96BADE471FE6BB8400DBEC9A /* Resources */,
 				A080E072F8807B38B5108B49 /* [CP] Embed Pods Frameworks */,
 				409E8247D95A4C1CBAFE2558 /* [CP] Copy Pods Resources */,
+				96952D501FFBA7F5008D1CA4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -470,6 +474,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ComediansContestUITests/Pods-ComediansContestUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		96952D501FFBA7F5008D1CA4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make format";
+		};
 		A080E072F8807B38B5108B49 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -539,6 +556,7 @@
 				9654A2951FEE915A001CC27E /* User.swift in Sources */,
 				96952D4D1FFB1B78008D1CA4 /* FeedMovieCell.swift in Sources */,
 				9654A29A1FEFDC52001CC27E /* FeedImageCell.swift in Sources */,
+				96952D4F1FFB5D17008D1CA4 /* Content.swift in Sources */,
 				96BADE4D1FE6BB8400DBEC9A /* AppDelegate.swift in Sources */,
 				9654A2931FEE9015001CC27E /* Feed.swift in Sources */,
 				9654A29D1FF000D6001CC27E /* FeedViewController.swift in Sources */,

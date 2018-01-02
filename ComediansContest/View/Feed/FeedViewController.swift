@@ -9,41 +9,42 @@ import IGListKit
 class FeedViewController: UIViewController {
 
     lazy var adapter: ListAdapter = {
-        return ListAdapter(updater: ListAdapterUpdater(), viewController: self, workingRangeSize: 0)
+        ListAdapter(updater: ListAdapterUpdater(), viewController: self, workingRangeSize: 0)
     }()
-    
-    let collectionView = UICollectionView.init(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-    
+
+    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(collectionView)
         adapter.collectionView = collectionView
         adapter.dataSource = self
     }
-    
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         collectionView.frame = view.bounds
     }
-
 }
 
 extension FeedViewController: ListAdapterDataSource {
-    func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        let user1: User = User.init(id: "user1", name: "keigo")
-        let user2: User = User.init(id: "user2", name: "nk5")
-        
+    func objects(for _: ListAdapter) -> [ListDiffable] {
+        let user1: User = User(id: "user1", name: "keigo")
+        let user2: User = User(id: "user2", name: "nk5")
+        let content1: Content = Content(id: "content1", type: .image, comment: "comment", image: UIImage(named: "gacky")!, url: nil, tags: ["food", "movie"])
+        let content2: Content = Content(id: "content2", type: .video, comment: "testtest", image: UIImage(named: "gacky")!, url: nil, tags: ["test", "sports"])
+
         return [
-            Feed(id: "test", user: user1, comment: "comment", image: UIImage.init(named: "gacky")!, tags: ["food", "movie"]),
-            Feed(id: "hoge", user: user2, comment: "testtestt", image: UIImage.init(named: "gacky")!, tags: ["test", "sports"])
-            ] as [ListDiffable]
+            Feed(id: "fuga", user: user1, content: content1),
+            Feed(id: "hoge", user: user2, content: content2),
+        ] as [ListDiffable]
     }
 
-    func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
+    func listAdapter(_: ListAdapter, sectionControllerFor _: Any) -> ListSectionController {
         return FeedSectionController()
     }
 
-    func emptyView(for listAdapter: ListAdapter) -> UIView? {
+    func emptyView(for _: ListAdapter) -> UIView? {
         return nil
     }
 }
