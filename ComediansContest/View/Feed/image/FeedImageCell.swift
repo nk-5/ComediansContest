@@ -12,6 +12,7 @@ class FeedImageCell: UICollectionViewCell {
     @IBOutlet weak var good: UIButton!
     @IBOutlet weak var better: UIButton!
     @IBOutlet weak var best: UIButton!
+    @IBOutlet weak var funnies: UILabel!
     @IBOutlet weak var comments: UIButton!
     @IBOutlet weak var share: UIButton!
 }

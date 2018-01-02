@@ -17,14 +17,24 @@ class Content {
     let comment: String
     let image: UIImage
     let url: URL?
+    let funnies: String
     let tags: Array<String>
 
-    init(id: String, type: ContentType, title: String, comment: String, image: UIImage, url: String?, tags: Array<String>) {
+    init(id: String,
+         type: ContentType,
+         title: String,
+         comment: String,
+         image: UIImage,
+         url: String?,
+         funnies: Int,
+         tags: Array<String>) {
+
         self.id = id
         self.type = type
         self.title = title
         self.comment = comment
         self.image = image
+        self.funnies = String(funnies)
         self.tags = tags
         guard let url = url else {
             self.url = nil

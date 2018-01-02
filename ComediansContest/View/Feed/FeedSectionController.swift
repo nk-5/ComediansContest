@@ -27,7 +27,9 @@ class FeedSectionController: ListSectionController {
             cell.userName.text = feed.user.name
             cell.imageView.image = feed.content.image
             cell.title.text = feed.content.title
+            cell.funnies.text = feed.content.funnies
             return cell
+
         case .video:
             let cell: FeedVideoCell = collectionContext?.dequeueReusableCell(withNibName: "FeedVideoCell", bundle: nil, for: self, at: index) as! FeedVideoCell
             cell.userName.text = feed.user.name

@@ -106,6 +106,7 @@
                 <outlet property="best" destination="IAV-e8-N5T" id="12f-Dm-CRA"/>
                 <outlet property="better" destination="vrh-hl-fXN" id="1c5-5P-qXG"/>
                 <outlet property="comments" destination="UvV-lU-qWi" id="cSE-mb-xHL"/>
+                <outlet property="funnies" destination="ggx-j5-sf3" id="miJ-ji-Ppp"/>
                 <outlet property="good" destination="xyl-Eq-pzf" id="4by-Sr-34f"/>
                 <outlet property="imageView" destination="OeA-Xd-2Xp" id="enr-8C-x6u"/>
                 <outlet property="share" destination="e0T-ev-Rw0" id="W3W-fY-ZS6"/>
