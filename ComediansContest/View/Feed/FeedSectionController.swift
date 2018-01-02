@@ -2,7 +2,6 @@
 //  FeedSectionController.swift
 //  ComediansContest
 //
-//
 
 import UIKit
 import IGListKit
@@ -17,7 +16,7 @@ class FeedSectionController: ListSectionController {
     }
 
     override func sizeForItem(at _: Int) -> CGSize {
-        return CGSize(width: (collectionContext?.containerSize.width)!, height: 400)
+        return CGSize(width: (collectionContext?.containerSize.width)!, height: 430)
     }
 
     override func cellForItem(at index: Int) -> UICollectionViewCell {
@@ -27,10 +26,13 @@ class FeedSectionController: ListSectionController {
             let cell: FeedImageCell = collectionContext?.dequeueReusableCell(withNibName: "FeedImageCell", bundle: nil, for: self, at: index) as! FeedImageCell
             cell.userName.text = feed.user.name
             cell.imageView.image = feed.content.image
+            cell.title.text = feed.content.title
             return cell
         case .video:
             let cell: FeedVideoCell = collectionContext?.dequeueReusableCell(withNibName: "FeedVideoCell", bundle: nil, for: self, at: index) as! FeedVideoCell
             cell.userName.text = feed.user.name
+            cell.title.text = feed.content.title
+
             let asset: NSDataAsset = NSDataAsset(name: "movie")!
             let videoURL: URL = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("gacky-movie.mov")
             try! asset.data.write(to: videoURL)
@@ -52,8 +54,6 @@ class FeedSectionController: ListSectionController {
     }
 
     override func didSelectItem(at index: Int) {
-        //        if feed?.content.type == ContentType.video {
-        //        }
         print(index)
     }
 }

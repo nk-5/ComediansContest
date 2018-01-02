@@ -31,8 +31,8 @@ extension FeedViewController: ListAdapterDataSource {
     func objects(for _: ListAdapter) -> [ListDiffable] {
         let user1: User = User(id: "user1", name: "keigo")
         let user2: User = User(id: "user2", name: "nk5")
-        let content1: Content = Content(id: "content1", type: .image, comment: "comment", image: UIImage(named: "gacky")!, url: nil, tags: ["food", "movie"])
-        let content2: Content = Content(id: "content2", type: .video, comment: "testtest", image: UIImage(named: "gacky")!, url: nil, tags: ["test", "sports"])
+        let content1: Content = Content(id: "content1", type: .image, title: "静止画がっきー", comment: "comment", image: UIImage(named: "gacky")!, url: nil, tags: ["food", "movie"])
+        let content2: Content = Content(id: "content2", type: .video, title: "動画がっきー", comment: "testtest", image: UIImage(named: "gacky")!, url: nil, tags: ["test", "sports"])
 
         return [
             Feed(id: "fuga", user: user1, content: content1),

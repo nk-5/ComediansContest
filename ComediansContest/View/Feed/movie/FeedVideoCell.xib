@@ -25,25 +25,8 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Of-pK-WSJ">
-                    <rect key="frame" x="0.0" y="300" width="375" height="30"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AID-b6-I99">
-                            <rect key="frame" x="0.0" y="0.0" width="125" height="30"/>
-                            <state key="normal" title="😀"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIJ-Tu-iwY">
-                            <rect key="frame" x="125" y="0.0" width="125" height="30"/>
-                            <state key="normal" title="😆"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrA-fH-HX2">
-                            <rect key="frame" x="250" y="0.0" width="125" height="30"/>
-                            <state key="normal" title="🤣"/>
-                        </button>
-                    </subviews>
-                </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="abH-Hm-NdW">
-                    <rect key="frame" x="0.0" y="330" width="375" height="30"/>
+                    <rect key="frame" x="0.0" y="380" width="375" height="30"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h01-fE-UNd">
                             <rect key="frame" x="0.0" y="0.0" width="97" height="30"/>
@@ -68,28 +51,59 @@
                         <constraint firstAttribute="height" constant="250" id="nZ3-Ma-Rwb"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5L-n6-xor">
+                    <rect key="frame" x="10" y="300" width="355" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="QxO-rh-YFX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Of-pK-WSJ">
+                    <rect key="frame" x="0.0" y="350" width="375" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AID-b6-I99">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="30"/>
+                            <state key="normal" title="😀"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIJ-Tu-iwY">
+                            <rect key="frame" x="125" y="0.0" width="125" height="30"/>
+                            <state key="normal" title="😆"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrA-fH-HX2">
+                            <rect key="frame" x="250" y="0.0" width="125" height="30"/>
+                            <state key="normal" title="🤣"/>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="8Of-pK-WSJ" firstAttribute="top" secondItem="jJw-gM-sZq" secondAttribute="bottom" id="1YJ-vO-icf"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gpe-ll-g1G" secondAttribute="trailing" id="639-Qp-E1B"/>
-                <constraint firstItem="abH-Hm-NdW" firstAttribute="top" secondItem="8Of-pK-WSJ" secondAttribute="bottom" id="7Hp-xd-bHr"/>
                 <constraint firstItem="abH-Hm-NdW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="EKz-Cn-Aue"/>
                 <constraint firstItem="jJw-gM-sZq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="RTw-9Q-J35"/>
+                <constraint firstItem="8Of-pK-WSJ" firstAttribute="top" secondItem="C5L-n6-xor" secondAttribute="bottom" id="W7v-ll-MQG"/>
+                <constraint firstItem="C5L-n6-xor" firstAttribute="top" secondItem="jJw-gM-sZq" secondAttribute="bottom" id="Yda-M9-elk"/>
+                <constraint firstItem="8Of-pK-WSJ" firstAttribute="top" secondItem="C5L-n6-xor" secondAttribute="bottom" id="bXc-qD-Z1f"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jJw-gM-sZq" secondAttribute="trailing" id="bdB-kb-LT1"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8Of-pK-WSJ" secondAttribute="trailing" id="dYs-iC-hdj"/>
                 <constraint firstItem="gpe-ll-g1G" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="dlI-D8-PZW"/>
                 <constraint firstItem="8Of-pK-WSJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dwi-Rs-pw8"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="abH-Hm-NdW" secondAttribute="trailing" id="kSR-rL-mnr"/>
                 <constraint firstItem="jJw-gM-sZq" firstAttribute="top" secondItem="gpe-ll-g1G" secondAttribute="bottom" id="mst-VU-zb7"/>
+                <constraint firstItem="abH-Hm-NdW" firstAttribute="top" secondItem="8Of-pK-WSJ" secondAttribute="bottom" id="qzt-XM-xvk"/>
                 <constraint firstItem="gpe-ll-g1G" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="r3p-JK-Pq9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="C5L-n6-xor" secondAttribute="trailing" constant="10" id="tBA-el-s2h"/>
+                <constraint firstItem="C5L-n6-xor" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="wZv-B0-drt"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="title" destination="C5L-n6-xor" id="c2J-zZ-62z"/>
                 <outlet property="userName" destination="gpe-ll-g1G" id="kSI-sj-8GB"/>
                 <outlet property="video" destination="jJw-gM-sZq" id="6BX-JF-ySy"/>
             </connections>
-            <point key="canvasLocation" x="109" y="56"/>
+            <point key="canvasLocation" x="103" y="49"/>
         </view>
     </objects>
 </document>
