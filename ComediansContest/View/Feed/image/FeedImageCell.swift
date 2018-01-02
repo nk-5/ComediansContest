@@ -7,7 +7,7 @@ import UIKit
 
 class FeedImageCell: UICollectionViewCell {
     @IBOutlet weak var userName: UILabel!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var contentsView: UIView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var good: UIButton!
     @IBOutlet weak var better: UIButton!

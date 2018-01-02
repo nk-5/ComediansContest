@@ -24,8 +24,14 @@ class FeedSectionController: ListSectionController {
         switch feed.content.type {
         case .image:
             let cell: FeedImageCell = collectionContext?.dequeueReusableCell(withNibName: "FeedImageCell", bundle: nil, for: self, at: index) as! FeedImageCell
+
+            let imageView: UIImageView = UIImageView(frame: CGRect(x: cell.contentsView.frame.origin.x,
+                                                                   y: cell.contentsView.frame.origin.y - cell.userName.frame.origin.y,
+                                                                   width: UIScreen.main.bounds.width, height: cell.contentsView.frame.height))
+
+            imageView.image = feed.content.image
+            cell.addSubview(imageView)
             cell.userName.text = feed.user.name
-            cell.imageView.image = feed.content.image
             cell.title.text = feed.content.title
             cell.funnies.text = feed.content.funnies
             return cell
