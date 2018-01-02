@@ -80,16 +80,16 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8Of-pK-WSJ" secondAttribute="trailing" id="dYs-iC-hdj"/>
                 <constraint firstItem="gpe-ll-g1G" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="dlI-D8-PZW"/>
                 <constraint firstItem="8Of-pK-WSJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dwi-Rs-pw8"/>
-                <constraint firstItem="gpe-ll-g1G" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="el5-Z0-pcH"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="abH-Hm-NdW" secondAttribute="trailing" id="kSR-rL-mnr"/>
                 <constraint firstItem="jJw-gM-sZq" firstAttribute="top" secondItem="gpe-ll-g1G" secondAttribute="bottom" id="mst-VU-zb7"/>
+                <constraint firstItem="gpe-ll-g1G" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="r3p-JK-Pq9"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="userName" destination="gpe-ll-g1G" id="kSI-sj-8GB"/>
                 <outlet property="video" destination="jJw-gM-sZq" id="6BX-JF-ySy"/>
             </connections>
-            <point key="canvasLocation" x="26.5" y="51.5"/>
+            <point key="canvasLocation" x="109" y="56"/>
         </view>
     </objects>
 </document>

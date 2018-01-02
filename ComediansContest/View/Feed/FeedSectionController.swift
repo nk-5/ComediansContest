@@ -38,9 +38,11 @@ class FeedSectionController: ListSectionController {
             let player: AVPlayer = AVPlayer(url: videoURL)
             let playerView: AVPlayerViewController = AVPlayerViewController()
             playerView.player = player
-            playerView.view.frame = CGRect(x: 0, y: 0, width: cell.video.frame.width, height: cell.video.frame.height)
-            cell.video.addSubview(playerView.view)
-            player.play()
+            playerView.view.frame = CGRect(x: cell.video.frame.origin.x, y: cell.video.frame.origin.y - cell.userName.frame.origin.y, width: UIScreen.main.bounds.width, height: cell.video.frame.height)
+            viewController?.addChildViewController(playerView)
+            cell.addSubview(playerView.view)
+            playerView.didMove(toParentViewController: viewController)
+
             return cell
         }
     }
@@ -49,6 +51,9 @@ class FeedSectionController: ListSectionController {
         feed = object as? Feed
     }
 
-    override func didSelectItem(at _: Int) {
+    override func didSelectItem(at index: Int) {
+        //        if feed?.content.type == ContentType.video {
+        //        }
+        print(index)
     }
 }
