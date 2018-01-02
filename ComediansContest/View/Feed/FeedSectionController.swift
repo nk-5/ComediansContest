@@ -21,17 +21,19 @@ class FeedSectionController: ListSectionController {
 
     override func cellForItem(at index: Int) -> UICollectionViewCell {
         guard let feed = feed else { fatalError("feed is nil") }
+
         let cell: FeedCell = collectionContext?.dequeueReusableCell(withNibName: "FeedCell", bundle: nil, for: self, at: index) as! FeedCell
         cell.userName.text = feed.user.name
         cell.title.text = feed.content.title
         cell.funnies.text = feed.content.funnies
-
+        let contentsRect: CGRect = CGRect(x: cell.contentsView.frame.origin.x,
+                                          y: cell.contentsView.frame.origin.y - cell.userName.frame.origin.y,
+                                          width: UIScreen.main.bounds.width,
+                                          height: cell.contentsView.frame.height)
         switch feed.content.type {
         case .image:
 
-            let imageView: UIImageView = UIImageView(frame: CGRect(x: cell.contentsView.frame.origin.x,
-                                                                   y: cell.contentsView.frame.origin.y - cell.userName.frame.origin.y,
-                                                                   width: UIScreen.main.bounds.width, height: cell.contentsView.frame.height))
+            let imageView: UIImageView = UIImageView(frame: contentsRect)
 
             imageView.image = feed.content.image
             cell.addSubview(imageView)
@@ -44,7 +46,7 @@ class FeedSectionController: ListSectionController {
             let player: AVPlayer = AVPlayer(url: videoURL)
             let playerView: AVPlayerViewController = AVPlayerViewController()
             playerView.player = player
-            playerView.view.frame = CGRect(x: cell.contentsView.frame.origin.x, y: cell.contentsView.frame.origin.y - cell.userName.frame.origin.y, width: UIScreen.main.bounds.width, height: cell.contentsView.frame.height)
+            playerView.view.frame = contentsRect
             viewController?.addChildViewController(playerView)
             cell.addSubview(playerView.view)
             playerView.didMove(toParentViewController: viewController)
