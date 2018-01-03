@@ -49,7 +49,34 @@
                     <view key="view" contentMode="scaleToFill" id="1Yy-lW-wgE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1O4-2g-IJl">
+                                <rect key="frame" x="0.0" y="588" width="375" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7G-Ha-15d">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="30"/>
+                                        <state key="normal" title="Library"/>
+                                        <connections>
+                                            <action selector="didTouchLibrary:" destination="Y4r-Zq-Alx" eventType="touchUpInside" id="p5q-sp-UZZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ec-yg-BqH">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="30"/>
+                                        <state key="normal" title="Photo"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfE-Yw-KZV">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="30"/>
+                                        <state key="normal" title="Video"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1O4-2g-IJl" firstAttribute="leading" secondItem="QMg-y5-k3T" secondAttribute="leading" id="57F-TL-lcu"/>
+                            <constraint firstItem="QMg-y5-k3T" firstAttribute="trailing" secondItem="1O4-2g-IJl" secondAttribute="trailing" id="63k-dv-Kpd"/>
+                            <constraint firstItem="QMg-y5-k3T" firstAttribute="bottom" secondItem="1O4-2g-IJl" secondAttribute="bottom" id="goq-Cq-tmq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QMg-y5-k3T"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Post" id="W4b-47-jK4"/>
