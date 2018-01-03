@@ -42,17 +42,17 @@
             </objects>
             <point key="canvasLocation" x="126" y="1014"/>
         </scene>
-        <!--Add-->
+        <!--Post-->
         <scene sceneID="qP8-Ef-jEd">
             <objects>
-                <viewController id="Y4r-Zq-Alx" sceneMemberID="viewController">
+                <viewController id="Y4r-Zq-Alx" customClass="PostViewController" customModule="ComediansContest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Yy-lW-wgE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="QMg-y5-k3T"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add" id="W4b-47-jK4"/>
+                    <tabBarItem key="tabBarItem" title="Post" id="W4b-47-jK4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQO-K3-naj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
