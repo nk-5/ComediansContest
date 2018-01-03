@@ -7,7 +7,7 @@ import UIKit
 import IGListKit
 import AVKit
 
-class FeedSectionController: ListSectionController {
+class FeedSectionController: ListSectionController, FeedCellDelegate {
 
     var feed: Feed?
 
@@ -23,6 +23,7 @@ class FeedSectionController: ListSectionController {
         guard let feed = feed else { fatalError("feed is nil") }
 
         let cell: FeedCell = collectionContext?.dequeueReusableCell(withNibName: "FeedCell", bundle: nil, for: self, at: index) as! FeedCell
+        cell.delegate = self
         cell.userName.text = feed.user.name
         cell.title.text = feed.content.title
         cell.funnies.text = feed.content.funnies
@@ -30,6 +31,9 @@ class FeedSectionController: ListSectionController {
                                           y: cell.contentsView.frame.origin.y - cell.userName.frame.origin.y,
                                           width: UIScreen.main.bounds.width,
                                           height: cell.contentsView.frame.height)
+        
+        cell.contentView.removeFromSuperview()
+        
         switch feed.content.type {
         case .image:
 
@@ -61,5 +65,10 @@ class FeedSectionController: ListSectionController {
 
     override func didSelectItem(at index: Int) {
         print(index)
+    }
+
+    // MARK: FeedCellDelegate
+    func didTapFunny(cell: FeedCell, evaluate: FunnyEvaluate) {
+        print(evaluate)
     }
 }
