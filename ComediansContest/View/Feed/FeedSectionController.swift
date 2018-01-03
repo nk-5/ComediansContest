@@ -31,9 +31,9 @@ class FeedSectionController: ListSectionController, FeedCellDelegate {
                                           y: cell.contentsView.frame.origin.y - cell.userName.frame.origin.y,
                                           width: UIScreen.main.bounds.width,
                                           height: cell.contentsView.frame.height)
-        
+
         cell.contentView.removeFromSuperview()
-        
+
         switch feed.content.type {
         case .image:
 
@@ -63,12 +63,11 @@ class FeedSectionController: ListSectionController, FeedCellDelegate {
         feed = object as? Feed
     }
 
-    override func didSelectItem(at index: Int) {
-        print(index)
+    override func didSelectItem(at _: Int) {
     }
 
     // MARK: FeedCellDelegate
-    func didTapFunny(cell: FeedCell, evaluate: FunnyEvaluate) {
+    func didTapFunny(cell _: FeedCell, evaluate: FunnyEvaluate) {
         print(evaluate)
     }
 }

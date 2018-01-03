@@ -42,7 +42,7 @@ class FeedCell: UICollectionViewCell {
     @objc func onBetter(_: UIButton) {
         delegate?.didTapFunny(cell: self, evaluate: .better)
     }
-    
+
     @objc func onBest(_: UIButton) {
         delegate?.didTapFunny(cell: self, evaluate: .best)
     }
