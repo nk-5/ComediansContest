@@ -52,6 +52,16 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
     }
 
     @IBAction func didTouchLibrary(_: Any) {
-        //        imagePickerController.sourceType = UIImage
+        guard let imagePickerController = imagePickerController else { return }
+        imagePickerController.sourceType = .photoLibrary
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
+    }
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
+        print(info)
+//        let vc: SelectImageViewController = SelectImageViewController()
+//        vc.imageView.image = info
+//        present(vc, animated: true, completion: nil)
     }
 }

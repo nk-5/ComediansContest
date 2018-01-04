@@ -42,6 +42,35 @@
             </objects>
             <point key="canvasLocation" x="126" y="1014"/>
         </scene>
+        <!--Select Image View Controller-->
+        <scene sceneID="oyP-I6-mlm">
+            <objects>
+                <viewController id="vhZ-nR-D9p" customClass="SelectImageViewController" customModule="ComediansContest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4fQ-XN-1kc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zOM-PH-ptR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9yA-xj-JQV" firstAttribute="trailing" secondItem="zOM-PH-ptR" secondAttribute="trailing" id="c6O-3N-cuR"/>
+                            <constraint firstItem="zOM-PH-ptR" firstAttribute="top" secondItem="9yA-xj-JQV" secondAttribute="top" id="fhf-Wy-ilh"/>
+                            <constraint firstItem="zOM-PH-ptR" firstAttribute="leading" secondItem="9yA-xj-JQV" secondAttribute="leading" id="hOT-5d-p0I"/>
+                            <constraint firstItem="9yA-xj-JQV" firstAttribute="bottom" secondItem="zOM-PH-ptR" secondAttribute="bottom" id="xOn-rp-uWY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9yA-xj-JQV"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="zOM-PH-ptR" id="4dU-lV-wOK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pde-bH-5HT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2508" y="725"/>
+        </scene>
         <!--Post-->
         <scene sceneID="qP8-Ef-jEd">
             <objects>
