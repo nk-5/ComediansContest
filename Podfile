@@ -9,7 +9,11 @@ target 'ComediansContest' do
   pod 'RxCocoa', '~> 4.0'
   pod 'RxDataSources', '~> 3.0'
 
+  # CollectionView
   pod 'IGListKit', '~> 3.1'
+
+  # ModalView
+  pod 'ZFDragableModalTransition'
 
   # Firebase
   #pod 'Firebase/Core'

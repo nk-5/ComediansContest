@@ -12,12 +12,14 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
+  - ZFDragableModalTransition (0.6)
 
 DEPENDENCIES:
   - IGListKit (~> 3.1)
   - RxCocoa (~> 4.0)
   - RxDataSources (~> 3.0)
   - RxSwift (~> 4.0)
+  - ZFDragableModalTransition
 
 SPEC CHECKSUMS:
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
@@ -25,7 +27,8 @@ SPEC CHECKSUMS:
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  ZFDragableModalTransition: 0d294eaaba6edfcb9839595de765f9ca06a4b524
 
-PODFILE CHECKSUM: 8569feffe4dbbb8d7fb63d0660a03f3562f6b34b
+PODFILE CHECKSUM: dc7661d71a5819e8832be7e4e931da8a9ea9e743
 
 COCOAPODS: 1.3.1
