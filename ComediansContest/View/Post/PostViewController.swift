@@ -60,7 +60,6 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
         print(info)
-        print("test")
         guard let image: UIImage = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
         let vc: SelectImageViewController = storyboard?.instantiateViewController(withIdentifier: "selectImageView") as! SelectImageViewController
         vc.selectedImage = image

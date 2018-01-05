@@ -51,15 +51,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mYd-PF-jzf">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="120" width="375" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="cd5-fq-nFb"/>
+                                </constraints>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SIg-3y-JPf">
+                                <rect key="frame" x="10" y="70" width="355" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="sZD-VX-axN"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9yA-xj-JQV" firstAttribute="trailing" secondItem="mYd-PF-jzf" secondAttribute="trailing" id="9sc-6H-dSB"/>
-                            <constraint firstItem="mYd-PF-jzf" firstAttribute="top" secondItem="9yA-xj-JQV" secondAttribute="top" id="Kjw-EF-Nud"/>
-                            <constraint firstItem="9yA-xj-JQV" firstAttribute="bottom" secondItem="mYd-PF-jzf" secondAttribute="bottom" id="ij1-QR-hTT"/>
-                            <constraint firstItem="mYd-PF-jzf" firstAttribute="leading" secondItem="9yA-xj-JQV" secondAttribute="leading" id="pYO-RO-9VK"/>
+                            <constraint firstItem="SIg-3y-JPf" firstAttribute="centerX" secondItem="4fQ-XN-1kc" secondAttribute="centerX" id="0dQ-ui-QxI"/>
+                            <constraint firstItem="mYd-PF-jzf" firstAttribute="centerX" secondItem="4fQ-XN-1kc" secondAttribute="centerX" id="E6i-8W-8F2"/>
+                            <constraint firstItem="9yA-xj-JQV" firstAttribute="trailing" secondItem="SIg-3y-JPf" secondAttribute="trailing" constant="10" id="ZNa-ya-sPz"/>
+                            <constraint firstItem="mYd-PF-jzf" firstAttribute="top" secondItem="SIg-3y-JPf" secondAttribute="bottom" id="hrt-zC-nHE"/>
+                            <constraint firstItem="SIg-3y-JPf" firstAttribute="top" secondItem="9yA-xj-JQV" secondAttribute="top" constant="50" id="hxI-DL-6jL"/>
+                            <constraint firstItem="mYd-PF-jzf" firstAttribute="leading" secondItem="4fQ-XN-1kc" secondAttribute="leading" id="saL-Jv-c4c"/>
+                            <constraint firstItem="SIg-3y-JPf" firstAttribute="leading" secondItem="9yA-xj-JQV" secondAttribute="leading" constant="10" id="xYg-M9-v0E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9yA-xj-JQV"/>
                     </view>
