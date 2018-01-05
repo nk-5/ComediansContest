@@ -23,6 +23,7 @@
 		96BADE621FE6BB8400DBEC9A /* ComediansContestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BADE611FE6BB8400DBEC9A /* ComediansContestTests.swift */; };
 		96BADE6D1FE6BB8400DBEC9A /* ComediansContestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BADE6C1FE6BB8400DBEC9A /* ComediansContestUITests.swift */; };
 		96EDCB9F1FFD120800189D44 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EDCB9E1FFD120800189D44 /* PostViewController.swift */; };
+		96EFCAA41FFF65820055AE3B /* PostFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EFCAA31FFF65820055AE3B /* PostFormViewController.swift */; };
 		ABAB2BCBF188120082DFE56F /* Pods_ComediansContest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E9D8A4D524F301CBF11D47 /* Pods_ComediansContest.framework */; };
 		B72430D9FE27E1D004AAD06F /* Pods_ComediansContestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD5CD0AF92F4C7E99107807 /* Pods_ComediansContestUITests.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		96BADE6C1FE6BB8400DBEC9A /* ComediansContestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComediansContestUITests.swift; sourceTree = "<group>"; };
 		96BADE6E1FE6BB8400DBEC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96EDCB9E1FFD120800189D44 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		96EFCAA31FFF65820055AE3B /* PostFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFormViewController.swift; sourceTree = "<group>"; };
 		B349801E915EAC770F626979 /* Pods-ComediansContestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComediansContestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComediansContestUITests/Pods-ComediansContestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CEA203B5B7DCC7481DCDFDBD /* Pods-ComediansContest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComediansContest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComediansContest/Pods-ComediansContest.debug.xcconfig"; sourceTree = "<group>"; };
 		DA73BA06A30510F300BBEEB7 /* Pods-ComediansContest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComediansContest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComediansContest/Pods-ComediansContest.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			children = (
 				96EDCB9E1FFD120800189D44 /* PostViewController.swift */,
 				969F7C061FFD4D93002DB8D0 /* SelectImageViewController.swift */,
+				96EFCAA31FFF65820055AE3B /* PostFormViewController.swift */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96EFCAA41FFF65820055AE3B /* PostFormViewController.swift in Sources */,
 				96EDCB9F1FFD120800189D44 /* PostViewController.swift in Sources */,
 				9654A2951FEE915A001CC27E /* User.swift in Sources */,
 				9654A29A1FEFDC52001CC27E /* FeedCell.swift in Sources */,

@@ -13,7 +13,7 @@ class SelectImageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let next: UIBarButtonItem = UIBarButtonItem(title: "Upload", style: .plain, target: self, action: #selector(didTouchUpload))
+        let next: UIBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(didTouchNext))
         navigationItem.rightBarButtonItem = next
 
         if let image = selectedImage {
@@ -21,7 +21,7 @@ class SelectImageViewController: UIViewController {
         }
     }
 
-    @objc func didTouchUpload() {
-        print("upload")
+    @objc func didTouchNext() {
+        print("next")
     }
 }
