@@ -9,6 +9,7 @@ import Photos
 class PostViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     var imagePickerController: UIImagePickerController?
+    var navigationBarRect: CGRect?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,24 +60,33 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
         present(imagePickerController, animated: true, completion: nil)
     }
 
+    // MARK: UINavigationControllerDelegate
+    func navigationController(_ navigationController: UINavigationController, didShow _: UIViewController, animated _: Bool) {
+        if navigationBarRect == nil {
+            // use Video upload form viewController
+            navigationBarRect = navigationController.navigationBar.frame
+        }
+    }
+
+    // MARK: UIImagePickerControllerDelegate
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
         print(info)
         guard let mediaType: String = info[UIImagePickerControllerMediaType] as? String else { return }
-        print(mediaType)
+        let vc: SelectImageViewController = storyboard?.instantiateViewController(withIdentifier: "selectImageView") as! SelectImageViewController
         switch mediaType {
         case "public.image":
-            print("iamge")
+            guard let image: UIImage = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
+            vc.selectedImage = image
             break
         case "public.movie":
-            print("movie")
+            guard let videoURL: URL = info[UIImagePickerControllerMediaURL] as? URL else { return }
+            vc.selectedVideoURL = videoURL
+            vc.navigationBarRect = navigationBarRect
             break
         default:
             break
         }
 
-        guard let image: UIImage = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
-        let vc: SelectImageViewController = storyboard?.instantiateViewController(withIdentifier: "selectImageView") as! SelectImageViewController
-        vc.selectedImage = image
         picker.show(vc, sender: nil)
     }
 }
