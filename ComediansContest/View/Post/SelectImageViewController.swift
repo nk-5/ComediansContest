@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import Presentr
 
 class SelectImageViewController: UIViewController {
 
@@ -22,5 +23,25 @@ class SelectImageViewController: UIViewController {
     }
 
     @objc func didTouchUpload() {
+        let alertView = Presentr.alertViewController(title: "Would you like to post it?", body: "")
+        let cancel = AlertAction(title: "cancel", style: .destructive, handler: nil)
+        let upload = AlertAction(title: "upload", style: .default, handler: { [weak self] _ in
+            guard let weakSelf = self else {
+                // TODO: error handling
+                return
+            }
+            weakSelf.upload()
+        })
+
+        alertView.addAction(cancel)
+        alertView.addAction(upload)
+
+        let presenter = Presentr(presentationType: .alert)
+
+        customPresentViewController(presenter, viewController: alertView, animated: true, completion: nil)
+    }
+
+    func upload() {
+        print("upload")
     }
 }

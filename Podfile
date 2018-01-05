@@ -15,6 +15,9 @@ target 'ComediansContest' do
   # ModalView
   pod 'ZFDragableModalTransition'
 
+  # Alert
+  pod 'Presentr'
+
   # Firebase
   #pod 'Firebase/Core'
   #pod 'Firebase/Auth'
