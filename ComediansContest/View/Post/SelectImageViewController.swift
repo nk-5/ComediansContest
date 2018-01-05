@@ -18,6 +18,8 @@ class SelectImageViewController: UIViewController {
         navigationItem.rightBarButtonItem = next
 
         if let image = selectedImage {
+            let multiplier: CGFloat = image.size.height / image.size.width
+            imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: multiplier).isActive = true
             imageView.image = image
         }
     }
@@ -42,6 +44,7 @@ class SelectImageViewController: UIViewController {
     }
 
     func upload() {
+        // TODO: upload image
         print("upload")
     }
 }
