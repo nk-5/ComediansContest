@@ -32,7 +32,9 @@ class SelectImageViewController: UIViewController {
             guard let navigationBarRect = navigationBarRect else { return }
             let navigationBar: UINavigationBar = UINavigationBar(frame: navigationBarRect)
             let navigationItem: UINavigationItem = UINavigationItem()
+            let cancel: UIBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(didTouchCancel))
             navigationItem.rightBarButtonItem = upload
+            navigationItem.leftBarButtonItem = cancel
             navigationBar.setItems([navigationItem], animated: true)
             view.addSubview(navigationBar)
 
@@ -72,6 +74,11 @@ class SelectImageViewController: UIViewController {
         let presenter = Presentr(presentationType: .alert)
 
         customPresentViewController(presenter, viewController: alertView, animated: true, completion: nil)
+    }
+
+    @objc func didTouchCancel() {
+        print("cancel")
+        dismiss(animated: true, completion: nil)
     }
 
     func upload() {
