@@ -42,47 +42,59 @@
             </objects>
             <point key="canvasLocation" x="126" y="1014"/>
         </scene>
-        <!--View Controller-->
+        <!--Post Form View Controller-->
         <scene sceneID="u7j-KK-zGK">
             <objects>
-                <viewController id="fll-30-cDl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="postFormVC" id="fll-30-cDl" customClass="PostFormViewController" customModule="ComediansContest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QUi-3C-9a2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EUK-tP-qge">
-                                <rect key="frame" x="10" y="70" width="355" height="80"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r62-se-NRV">
+                                <rect key="frame" x="10" y="50" width="355" height="134"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rQi-qy-EUa">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="Xq8-6R-t16"/>
-                                        </constraints>
-                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="619-UC-jPj">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tM7-hv-obw">
+                                                <rect key="frame" x="0.0" y="30" width="275" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rQi-qy-EUa">
+                                                <rect key="frame" x="275" y="0.0" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Xq8-6R-t16"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mu-ww-o5J">
+                                        <rect key="frame" x="0.0" y="80" width="355" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SIg-3y-JPf">
-                                        <rect key="frame" x="80" y="0.0" width="275" height="80"/>
+                                        <rect key="frame" x="0.0" y="104" width="355" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="DkG-IW-HBk"/>
-                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBJ-eC-v2n">
-                                <rect key="frame" x="142" y="200" width="91" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBJ-eC-v2n">
+                                <rect key="frame" x="142" y="286" width="91" height="30"/>
                                 <state key="normal" title="Share Twitter"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="EUK-tP-qge" firstAttribute="centerX" secondItem="QUi-3C-9a2" secondAttribute="centerX" id="5Wb-tw-xD3"/>
                             <constraint firstItem="uBJ-eC-v2n" firstAttribute="centerX" secondItem="QUi-3C-9a2" secondAttribute="centerX" id="Jd9-BC-5O0"/>
-                            <constraint firstItem="1dx-4d-sa7" firstAttribute="trailing" secondItem="EUK-tP-qge" secondAttribute="trailing" constant="10" id="OcB-nR-rmU"/>
-                            <constraint firstItem="uBJ-eC-v2n" firstAttribute="top" secondItem="EUK-tP-qge" secondAttribute="bottom" constant="50" id="c4q-H6-6lF"/>
-                            <constraint firstItem="EUK-tP-qge" firstAttribute="top" secondItem="1dx-4d-sa7" secondAttribute="top" constant="50" id="yxh-tQ-PPq"/>
-                            <constraint firstItem="EUK-tP-qge" firstAttribute="leading" secondItem="1dx-4d-sa7" secondAttribute="leading" constant="10" id="zoH-Hb-Gx8"/>
+                            <constraint firstItem="r62-se-NRV" firstAttribute="leading" secondItem="1dx-4d-sa7" secondAttribute="leading" constant="10" id="VnI-89-5DE"/>
+                            <constraint firstItem="r62-se-NRV" firstAttribute="top" secondItem="1dx-4d-sa7" secondAttribute="top" constant="30" id="da4-mF-ns1"/>
+                            <constraint firstItem="1dx-4d-sa7" firstAttribute="trailing" secondItem="r62-se-NRV" secondAttribute="trailing" constant="10" id="mMM-bY-hkp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1dx-4d-sa7"/>
                     </view>

@@ -10,6 +10,7 @@ enum ContentType: Int {
     case video
 }
 
+// TODO: delete tags
 class Content {
     let id: String
     let type: ContentType

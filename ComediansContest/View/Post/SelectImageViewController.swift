@@ -4,12 +4,14 @@
 //
 
 import UIKit
+import ZFDragableModalTransition
 
 class SelectImageViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
 
     var selectedImage: UIImage?
+    var animator: ZFModalTransitionAnimator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,12 @@ class SelectImageViewController: UIViewController {
     }
 
     @objc func didTouchNext() {
-        print("next")
+        let postFormVC: PostFormViewController = storyboard?.instantiateViewController(withIdentifier: "postFormVC") as! PostFormViewController
+        animator = ZFModalTransitionAnimator(modalViewController: postFormVC)
+        animator?.direction = ZFModalTransitonDirection.bottom
+
+        postFormVC.transitioningDelegate = animator
+        postFormVC.modalPresentationStyle = .custom
+        present(postFormVC, animated: true, completion: nil)
     }
 }
