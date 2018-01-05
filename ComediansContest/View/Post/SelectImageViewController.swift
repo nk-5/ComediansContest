@@ -47,7 +47,7 @@ class SelectImageViewController: UIViewController {
     }
 
     func getImageFrameSize(imageSize: CGSize) -> CGRect {
-        if imageSize.width > mediaView.frame.width &&
+        if imageSize.width > UIScreen.main.bounds.width &&
             imageSize.height > mediaView.frame.height {
             return CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: mediaView.frame.height)
         }
