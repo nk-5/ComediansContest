@@ -155,7 +155,6 @@
 		96BADE401FE6BB8400DBEC9A = {
 			isa = PBXGroup;
 			children = (
-				96EFCAA720010B4E0055AE3B /* GoogleService-Info.plist */,
 				96BADE4B1FE6BB8400DBEC9A /* ComediansContest */,
 				96BADE601FE6BB8400DBEC9A /* ComediansContestTests */,
 				96BADE6B1FE6BB8400DBEC9A /* ComediansContestUITests */,
@@ -186,6 +185,7 @@
 				96BADE531FE6BB8400DBEC9A /* Assets.xcassets */,
 				96BADE551FE6BB8400DBEC9A /* LaunchScreen.storyboard */,
 				96BADE581FE6BB8400DBEC9A /* Info.plist */,
+				96EFCAA720010B4E0055AE3B /* GoogleService-Info.plist */,
 			);
 			path = ComediansContest;
 			sourceTree = "<group>";
