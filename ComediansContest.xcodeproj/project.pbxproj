@@ -23,6 +23,7 @@
 		96BADE621FE6BB8400DBEC9A /* ComediansContestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BADE611FE6BB8400DBEC9A /* ComediansContestTests.swift */; };
 		96BADE6D1FE6BB8400DBEC9A /* ComediansContestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BADE6C1FE6BB8400DBEC9A /* ComediansContestUITests.swift */; };
 		96EDCB9F1FFD120800189D44 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EDCB9E1FFD120800189D44 /* PostViewController.swift */; };
+		96EFCAA820010B4E0055AE3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96EFCAA720010B4E0055AE3B /* GoogleService-Info.plist */; };
 		ABAB2BCBF188120082DFE56F /* Pods_ComediansContest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E9D8A4D524F301CBF11D47 /* Pods_ComediansContest.framework */; };
 		B72430D9FE27E1D004AAD06F /* Pods_ComediansContestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD5CD0AF92F4C7E99107807 /* Pods_ComediansContestUITests.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		96BADE6C1FE6BB8400DBEC9A /* ComediansContestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComediansContestUITests.swift; sourceTree = "<group>"; };
 		96BADE6E1FE6BB8400DBEC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96EDCB9E1FFD120800189D44 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		96EFCAA720010B4E0055AE3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B349801E915EAC770F626979 /* Pods-ComediansContestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComediansContestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComediansContestUITests/Pods-ComediansContestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CEA203B5B7DCC7481DCDFDBD /* Pods-ComediansContest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComediansContest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComediansContest/Pods-ComediansContest.debug.xcconfig"; sourceTree = "<group>"; };
 		DA73BA06A30510F300BBEEB7 /* Pods-ComediansContest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComediansContest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComediansContest/Pods-ComediansContest.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		96BADE401FE6BB8400DBEC9A = {
 			isa = PBXGroup;
 			children = (
+				96EFCAA720010B4E0055AE3B /* GoogleService-Info.plist */,
 				96BADE4B1FE6BB8400DBEC9A /* ComediansContest */,
 				96BADE601FE6BB8400DBEC9A /* ComediansContestTests */,
 				96BADE6B1FE6BB8400DBEC9A /* ComediansContestUITests */,
@@ -355,6 +358,7 @@
 			files = (
 				96BADE571FE6BB8400DBEC9A /* LaunchScreen.storyboard in Resources */,
 				9654A2981FEEB1DE001CC27E /* FeedCell.xib in Resources */,
+				96EFCAA820010B4E0055AE3B /* GoogleService-Info.plist in Resources */,
 				96BADE541FE6BB8400DBEC9A /* Assets.xcassets in Resources */,
 				96BADE521FE6BB8400DBEC9A /* Main.storyboard in Resources */,
 			);
