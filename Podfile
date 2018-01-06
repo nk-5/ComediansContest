@@ -19,7 +19,7 @@ target 'ComediansContest' do
   pod 'Presentr'
 
   # Firebase
-  #pod 'Firebase/Core'
+  pod 'Firebase/Core'
   #pod 'Firebase/Auth'
   #pod 'Firestore', :podspec => 'https://storage.googleapis.com/firebase-preview-drop/ios/firestore/0.7.0/Firestore.podspec.json'
   #pod 'Firebase/DynamicLinks'

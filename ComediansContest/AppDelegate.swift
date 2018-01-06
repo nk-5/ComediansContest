@@ -2,8 +2,6 @@
 //  AppDelegate.swift
 //  ComediansContest
 //
-//  Created by 中川 慶悟 on 2017/12/17.
-//
 
 import UIKit
 
