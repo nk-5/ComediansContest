@@ -76,7 +76,9 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
         switch mediaType {
         case "public.image":
             guard let image: UIImage = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
+            guard let imageURL: URL = info[UIImagePickerControllerReferenceURL] as? URL else { return }
             vc.selectedImage = image
+            vc.selectedVideoURL = imageURL
             break
         case "public.movie":
             guard let videoURL: URL = info[UIImagePickerControllerMediaURL] as? URL else { return }

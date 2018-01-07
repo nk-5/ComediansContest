@@ -26,10 +26,10 @@ class SelectImageViewController: UIViewController {
 
             imageView.image = image
             mediaView.addSubview(imageView)
-        }
-
-        if let videoURL = selectedVideoURL {
+        } else {
+            guard let videoURL = selectedVideoURL else { return }
             guard let navigationBarRect = navigationBarRect else { return }
+            
             let navigationBar: UINavigationBar = UINavigationBar(frame: navigationBarRect)
             let navigationItem: UINavigationItem = UINavigationItem()
             let cancel: UIBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(didTouchCancel))
