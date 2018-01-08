@@ -8,11 +8,16 @@ import Photos
 
 class PostViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
+    let postVM: PostViewModel = PostViewModel()
+
     var imagePickerController: UIImagePickerController?
     var navigationBarRect: CGRect?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        postVM.authFirebase()
+
         imagePickerController = UIImagePickerController()
         // TODO:
         // photo library's data show in collection view
