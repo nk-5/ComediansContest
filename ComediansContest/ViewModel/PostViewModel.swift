@@ -28,8 +28,7 @@ class PostViewModel {
         case .image:
             ImageStorage.sharedInstance.upload(url: url)
         case .video:
-            // TODO: VideoStorage upload
-            print("test")
+            VideoStorage.sharedInstance.upload(url: url)
         }
     }
 }
