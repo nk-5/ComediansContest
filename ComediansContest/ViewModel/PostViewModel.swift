@@ -23,7 +23,13 @@ class PostViewModel {
 
     // TODO: callbackで成否を返す
     // upload後のdelegateないか調べる
-    func upload(url: URL) {
-        ImageStorage.sharedInstance.upload(url: url)
+    func upload(url: URL, type: PostContentType) {
+        switch type {
+        case .image:
+            ImageStorage.sharedInstance.upload(url: url)
+        case .video:
+            // TODO: VideoStorage upload
+            print("test")
+        }
     }
 }

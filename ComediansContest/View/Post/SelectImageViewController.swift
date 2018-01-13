@@ -7,6 +7,11 @@ import UIKit
 import AVKit
 import Presentr
 
+enum PostContentType: Int {
+    case image
+    case video
+}
+
 class SelectImageViewController: UIViewController {
 
     @IBOutlet weak var mediaView: UIView!
@@ -16,6 +21,7 @@ class SelectImageViewController: UIViewController {
     var selectedImage: UIImage?
     var selectedVideoURL: URL?
     var navigationBarRect: CGRect?
+    var type: PostContentType?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,6 +93,7 @@ class SelectImageViewController: UIViewController {
         // TODO: upload image
         print("upload")
         guard let contentURL: URL = selectedVideoURL else { return }
-        postVM.upload(url: contentURL)
+        guard let type: PostContentType = type else { return }
+        postVM.upload(url: contentURL, type: type)
     }
 }

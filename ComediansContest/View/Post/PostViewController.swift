@@ -84,11 +84,13 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
             guard let imageURL: URL = info[UIImagePickerControllerReferenceURL] as? URL else { return }
             vc.selectedImage = image
             vc.selectedVideoURL = imageURL
+            vc.type = PostContentType.image
             break
         case "public.movie":
             guard let videoURL: URL = info[UIImagePickerControllerMediaURL] as? URL else { return }
             vc.selectedVideoURL = videoURL
             vc.navigationBarRect = navigationBarRect
+            vc.type = PostContentType.video
             break
         default:
             break
