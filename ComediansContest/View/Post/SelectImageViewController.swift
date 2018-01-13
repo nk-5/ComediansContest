@@ -90,10 +90,7 @@ class SelectImageViewController: UIViewController {
     }
 
     func upload() {
-        // TODO: upload image
-        print("upload")
-                guard let contentURL: URL = selectedVideoURL else { return }
-//        guard let contentURL: URL = uploadRef else { return }
+        guard let contentURL: URL = selectedVideoURL else { return }
         guard let type: PostContentType = type else { return }
         postVM.upload(url: contentURL, type: type)
     }
