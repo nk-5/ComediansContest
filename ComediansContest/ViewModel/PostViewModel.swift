@@ -5,14 +5,14 @@
 
 import Firebase
 
-protocol UploadTaskDelegate {
+protocol UploadTaskDelegate: class {
     func succeed(downloadURL: URL)
     func failed(error: Error?)
 }
 
 class PostViewModel {
 
-    var delegate: UploadTaskDelegate?
+    weak var delegate: UploadTaskDelegate?
 
     // TODO: callbackで成否を返す
     func authFirebase() {
