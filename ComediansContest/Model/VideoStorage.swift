@@ -8,7 +8,7 @@ import FirebaseStorage
 
 let VIDEO_PATH: String = "video/"
 
-class VideoStorage {
+class VideoStorage: FirebaseStorage {
     private let storageRef: StorageReference
 
     init() {
@@ -20,17 +20,14 @@ class VideoStorage {
         return instance
     }()
 
-    func upload(url: URL) {
-
+    func upload(url: URL, completeHandler: @escaping (URL?, Error?) -> Void) {
         let filePath: String = "\(VIDEO_PATH)\(Date.timeIntervalSinceReferenceDate * 1000)/\(url.lastPathComponent)"
         storageRef.child(filePath).putFile(from: url, metadata: nil, completion: { metadata, error in
             if let error = error {
-                print(error)
+                completeHandler(nil, error)
             } else {
-                // TODO: success and move feed
-                // error handling
                 let downloadURL = metadata!.downloadURL()
-                print(downloadURL)
+                completeHandler(downloadURL, nil)
             }
         })
     }

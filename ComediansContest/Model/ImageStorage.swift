@@ -6,9 +6,13 @@
 import Photos
 import FirebaseStorage
 
+protocol FirebaseStorage {
+    func upload(url: URL, completeHandler: @escaping (URL?, Error?) -> Void)
+}
+
 let IMAGE_PATH: String = "image/"
 
-class ImageStorage {
+class ImageStorage: FirebaseStorage {
 
     private let storageRef: StorageReference
 
@@ -21,9 +25,7 @@ class ImageStorage {
         return instance
     }()
 
-    func upload(url: URL) {
-        // error handling
-
+    func upload(url: URL, completeHandler: @escaping (URL?, Error?) -> Void) {
         let assets: PHFetchResult = PHAsset.fetchAssets(withALAssetURLs: [url], options: nil)
         let asset = assets.firstObject
         asset?.requestContentEditingInput(with: nil, completionHandler: { contentEditingInput, _ in
@@ -33,9 +35,14 @@ class ImageStorage {
             self.storageRef.child(filePath).putFile(from: imageFile!, metadata: nil, completion: { metadata, error in
                 if let error = error {
                     print(error)
+                    completeHandler(nil, error)
                 } else {
-                    let downloadURL = metadata!.downloadURL()
+                    guard let downloadURL = metadata!.downloadURL() else {
+                        completeHandler(nil, nil)
+                        return
+                    }
                     print(downloadURL)
+                    completeHandler(downloadURL, nil)
                 }
             })
         })

@@ -12,7 +12,7 @@ enum PostContentType: Int {
     case video
 }
 
-class SelectImageViewController: UIViewController {
+class SelectImageViewController: UIViewController, UploadTaskDelegate {
 
     @IBOutlet weak var mediaView: UIView!
 
@@ -25,6 +25,8 @@ class SelectImageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        postVM.delegate = self
+
         let upload: UIBarButtonItem = UIBarButtonItem(title: "Upload", style: .plain, target: self, action: #selector(didTouchUpload))
 
         if let image = selectedImage {
@@ -93,5 +95,17 @@ class SelectImageViewController: UIViewController {
         guard let contentURL: URL = selectedVideoURL else { return }
         guard let type: PostContentType = type else { return }
         postVM.upload(url: contentURL, type: type)
+    }
+
+    // MARK: UploadTaskDelegate
+    func succeed() {
+        // TODO: success and move feed
+        print("upload success")
+    }
+
+    func failed(error: Error?) {
+        if let error = error {
+            print(error)
+        }
     }
 }
