@@ -98,8 +98,10 @@ class SelectImageViewController: UIViewController, UploadTaskDelegate {
     }
 
     // MARK: UploadTaskDelegate
-    func succeed() {
+    func succeed(downloadURL _: URL) {
         // TODO: success and move feed
+        let vc: FeedViewController = storyboard?.instantiateViewController(withIdentifier: "feedViewController") as! FeedViewController
+        show(vc, sender: nil)
         print("upload success")
     }
 

@@ -6,7 +6,7 @@
 import Firebase
 
 protocol UploadTaskDelegate {
-    func succeed()
+    func succeed(downloadURL: URL)
     func failed(error: Error?)
 }
 
@@ -52,15 +52,12 @@ class PostViewModel {
             return
         }
 
-        do {
-            let strURL: String = try String(contentsOf: url)
-            insertContent(url: strURL)
-        } catch {
-            delegate?.failed(error: error)
-        }
+        insertContent(url: url.absoluteString)
+        delegate?.succeed(downloadURL: url)
     }
 
+    // TODO: insert content
     func insertContent(url _: String) {
-        delegate?.succeed()
+        print("insert")
     }
 }
