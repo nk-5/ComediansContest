@@ -26,6 +26,11 @@ target 'ComediansContest' do
   #pod 'Firebase/DynamicLinks'
   #pod 'Firebase/AdMob'
 
+  # Facebook
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
+
   target 'ComediansContestTests' do
     inherit! :search_paths
   end
