@@ -17,6 +17,7 @@ target 'ComediansContest' do
 
   # Alert
   pod 'Presentr'
+  pod 'PopupDialog', '0.7'
 
   # Firebase
   pod 'Firebase/Core'

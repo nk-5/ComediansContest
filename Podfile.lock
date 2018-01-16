@@ -6,6 +6,7 @@ PODS:
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
   - Differentiator (3.0.2)
+  - DynamicBlurView (2.0.1)
   - FacebookCore (0.3.0):
     - Bolts (~> 1.8)
     - FBSDKCoreKit (~> 4.27)
@@ -71,6 +72,8 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - PopupDialog (0.7.0):
+    - DynamicBlurView (~> 2.0)
   - Presentr (1.3)
   - RxCocoa (4.0.0):
     - RxSwift (~> 4.0)
@@ -89,6 +92,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Storage
   - IGListKit (~> 3.1)
+  - PopupDialog (= 0.7)
   - Presentr
   - RxCocoa (~> 4.0)
   - RxDataSources (~> 3.0)
@@ -98,6 +102,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  DynamicBlurView: 5e6babd80cc0ddfd3ddfc4f5dacf2fe4181e7c52
   FacebookCore: 3ffa190a3f1f96cec0e44d3fc221bc322c595ffa
   FacebookLogin: 0af839ea858faef99550d16596b87b4a8e8906e6
   FacebookShare: 0469964297ebd75f052be2c5083389a4208e82b7
@@ -114,12 +119,13 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
   IGListKit: cb97f405ae43e59fe1da74271e19427ec20d3c07
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  PopupDialog: 4abc6db5b22b7c8029e2162bde8891ee6aa4b6c8
   Presentr: 3f0825a42cb32ecd8fc6b6d0b0de87d7d0b42482
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   ZFDragableModalTransition: 0d294eaaba6edfcb9839595de765f9ca06a4b524
 
-PODFILE CHECKSUM: ed53a9472e9e9c7ccd9f54f353cf4590062accb4
+PODFILE CHECKSUM: a8c418814981c3088250e962662789d32ea48b4e
 
 COCOAPODS: 1.3.1
