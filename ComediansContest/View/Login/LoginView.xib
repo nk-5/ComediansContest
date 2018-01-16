@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="Hls-HI-lKA" customClass="LoginViewController" customModule="ComediansContest" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="v4B-fn-tjo">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ay-Mx-b0P">
+                        <rect key="frame" x="62.5" y="283" width="250" height="100"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="J9k-7v-G5t"/>
+                            <constraint firstAttribute="height" constant="100" id="vGE-EZ-oZX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="5ay-Mx-b0P" firstAttribute="centerX" secondItem="v4B-fn-tjo" secondAttribute="centerX" id="Min-jG-2so"/>
+                    <constraint firstItem="5ay-Mx-b0P" firstAttribute="centerY" secondItem="v4B-fn-tjo" secondAttribute="centerY" id="YRw-ej-8mx"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="xph-H6-MpD"/>
+            </view>
+            <connections>
+                <outlet property="facebookButtonField" destination="5ay-Mx-b0P" id="zZ1-aI-rS4"/>
+            </connections>
+            <point key="canvasLocation" x="-195" y="1"/>
+        </viewController>
+    </objects>
+</document>

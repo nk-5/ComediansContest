@@ -3,7 +3,5 @@
 //  ComediansContest
 //
 
-
 class LoginViewModel {
-
 }

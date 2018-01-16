@@ -10,6 +10,7 @@
 		3295C8AB2C03AB7348A673FE /* Pods_ComediansContestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0184B83AD7DAD5449D806324 /* Pods_ComediansContestTests.framework */; };
 		961A43A8200E4233003A81C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A43A7200E4233003A81C3 /* LoginViewController.swift */; };
 		961A43AD200E43A2003A81C3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A43AC200E43A2003A81C3 /* LoginViewModel.swift */; };
+		961A43AF200E50FE003A81C3 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961A43AE200E50FE003A81C3 /* LoginView.xib */; };
 		962A5609200292A2004B35B1 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962A5608200292A2004B35B1 /* PostViewModel.swift */; };
 		962A560B200293FA004B35B1 /* ImageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962A560A200293FA004B35B1 /* ImageStorage.swift */; };
 		9654A2911FEE8FE7001CC27E /* FeedSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9654A2901FEE8FE7001CC27E /* FeedSectionController.swift */; };
@@ -58,6 +59,7 @@
 		446364A02F78E8CA6484BD82 /* Pods-ComediansContestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComediansContestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComediansContestTests/Pods-ComediansContestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		961A43A7200E4233003A81C3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		961A43AC200E43A2003A81C3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		961A43AE200E50FE003A81C3 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		962A5608200292A2004B35B1 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		962A560A200293FA004B35B1 /* ImageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorage.swift; sourceTree = "<group>"; };
 		9654A2901FEE8FE7001CC27E /* FeedSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSectionController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				961A43A7200E4233003A81C3 /* LoginViewController.swift */,
+				961A43AE200E50FE003A81C3 /* LoginView.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			files = (
 				96BADE571FE6BB8400DBEC9A /* LaunchScreen.storyboard in Resources */,
 				9654A2981FEEB1DE001CC27E /* FeedCell.xib in Resources */,
+				961A43AF200E50FE003A81C3 /* LoginView.xib in Resources */,
 				96EFCAA820010B4E0055AE3B /* GoogleService-Info.plist in Resources */,
 				96BADE541FE6BB8400DBEC9A /* Assets.xcassets in Resources */,
 				96BADE521FE6BB8400DBEC9A /* Main.storyboard in Resources */,
