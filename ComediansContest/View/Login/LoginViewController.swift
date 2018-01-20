@@ -6,25 +6,23 @@
 import UIKit
 import FacebookLogin
 
-import PopupDialog
-
 class LoginViewController: UIViewController, LoginButtonDelegate {
 
     @IBOutlet weak var facebookButtonField: UIView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let facebookLoginButton: LoginButton = LoginButton.init(readPermissions: [.publicProfile])
+
+        let facebookLoginButton: LoginButton = LoginButton(readPermissions: [.publicProfile])
         facebookLoginButton.delegate = self
-        facebookLoginButton.addSubview(facebookLoginButton)
+        facebookButtonField.addSubview(facebookLoginButton)
     }
-    
-    func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
+
+    func loginButtonDidCompleteLogin(_: LoginButton, result: LoginResult) {
         switch result {
         case let .success(grantedPermissions: grantedPermissions, declinedPermissions: declinedPermissions, token: accessToken):
             print("login")
-            print(grantedPermissionsb)
+            print(grantedPermissions)
             print(declinedPermissions)
             print(accessToken)
         case .cancelled:
@@ -33,7 +31,7 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
             print(error)
         }
     }
-    
+
     func loginButtonDidLogOut(_ loginButton: LoginButton) {
         print(loginButton)
     }

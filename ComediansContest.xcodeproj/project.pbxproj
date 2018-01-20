@@ -11,6 +11,7 @@
 		961A43A8200E4233003A81C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A43A7200E4233003A81C3 /* LoginViewController.swift */; };
 		961A43AD200E43A2003A81C3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A43AC200E43A2003A81C3 /* LoginViewModel.swift */; };
 		961A43AF200E50FE003A81C3 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961A43AE200E50FE003A81C3 /* LoginView.xib */; };
+		961A43B2200E575F003A81C3 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A43B1200E575F003A81C3 /* MypageViewController.swift */; };
 		962A5609200292A2004B35B1 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962A5608200292A2004B35B1 /* PostViewModel.swift */; };
 		962A560B200293FA004B35B1 /* ImageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962A560A200293FA004B35B1 /* ImageStorage.swift */; };
 		9654A2911FEE8FE7001CC27E /* FeedSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9654A2901FEE8FE7001CC27E /* FeedSectionController.swift */; };
@@ -60,6 +61,7 @@
 		961A43A7200E4233003A81C3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		961A43AC200E43A2003A81C3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		961A43AE200E50FE003A81C3 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		961A43B1200E575F003A81C3 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
 		962A5608200292A2004B35B1 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		962A560A200293FA004B35B1 /* ImageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorage.swift; sourceTree = "<group>"; };
 		9654A2901FEE8FE7001CC27E /* FeedSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSectionController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		961A43B0200E573A003A81C3 /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				961A43B1200E575F003A81C3 /* MypageViewController.swift */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
 		9654A29B1FF00082001CC27E /* Feed */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +176,7 @@
 		96B44C191FEAB34100A61E9D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				961A43B0200E573A003A81C3 /* Mypage */,
 				961A43A9200E436E003A81C3 /* Login */,
 				96EDCB9D1FFD118B00189D44 /* Post */,
 				9654A29B1FF00082001CC27E /* Feed */,
@@ -627,6 +638,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961A43B2200E575F003A81C3 /* MypageViewController.swift in Sources */,
 				962A5609200292A2004B35B1 /* PostViewModel.swift in Sources */,
 				962A560B200293FA004B35B1 /* ImageStorage.swift in Sources */,
 				96EDCB9F1FFD120800189D44 /* PostViewController.swift in Sources */,
