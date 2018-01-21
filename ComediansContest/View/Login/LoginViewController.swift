@@ -21,6 +21,7 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
         facebookButtonField.addSubview(facebookLoginButton)
     }
 
+    // Facebook login
     func loginButtonDidCompleteLogin(_: LoginButton, result: LoginResult) {
         switch result {
         case let .success(grantedPermissions: grantedPermissions, declinedPermissions: declinedPermissions, token: accessToken):
