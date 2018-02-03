@@ -13,8 +13,10 @@ class LoginViewModel {
                 print(error)
                 return
             } else {
-                print(user?.displayName)
-                print(user?.email)
+                guard let user = user else { return }
+                User.insert(id: user.uid, name: user.displayName!)
+                print(user.displayName)
+                print(user.email)
             }
         })
     }

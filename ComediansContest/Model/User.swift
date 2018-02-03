@@ -18,15 +18,17 @@ class User {
     }
 
     // TODO: insert contents
-
+    // TODO: insert icon data, nickname
+    // TODO: error handling
     static func insert(id: String, name: String) {
         //        userRef?.collection("test").document("docTest").collection("keigo").document()
-        let ref: DocumentReference? = nil
-        ref!.collection(USER_REF).document(id).setData([
+        Firestore.firestore().collection(USER_REF).document(id).setData([
             "name": name,
-            "icon": Data(),
+            //            "icon": Data(),
         ], completion: { error in
-            print(error!)
+            if let error = error {
+                print(error)
+            }
         })
     }
 }
