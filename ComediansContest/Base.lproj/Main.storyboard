@@ -202,10 +202,10 @@
             </objects>
             <point key="canvasLocation" x="126" y="-320"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="lah-dl-n5N">
             <objects>
-                <tabBarController id="YxH-AG-veu" sceneMemberID="viewController">
+                <tabBarController id="YxH-AG-veu" customClass="MainTabBarController" customModule="ComediansContest" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="otz-LR-AdW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -29,6 +29,7 @@
 		96BADE571FE6BB8400DBEC9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96BADE551FE6BB8400DBEC9A /* LaunchScreen.storyboard */; };
 		96BADE621FE6BB8400DBEC9A /* ComediansContestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BADE611FE6BB8400DBEC9A /* ComediansContestTests.swift */; };
 		96BADE6D1FE6BB8400DBEC9A /* ComediansContestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BADE6C1FE6BB8400DBEC9A /* ComediansContestUITests.swift */; };
+		96D292CE20262FEF001C77FA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D292CD20262FEF001C77FA /* MainTabBarController.swift */; };
 		96EDCB9F1FFD120800189D44 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EDCB9E1FFD120800189D44 /* PostViewController.swift */; };
 		96EFCAA820010B4E0055AE3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96EFCAA720010B4E0055AE3B /* GoogleService-Info.plist */; };
 		ABAB2BCBF188120082DFE56F /* Pods_ComediansContest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E9D8A4D524F301CBF11D47 /* Pods_ComediansContest.framework */; };
@@ -85,6 +86,7 @@
 		96BADE681FE6BB8400DBEC9A /* ComediansContestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComediansContestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96BADE6C1FE6BB8400DBEC9A /* ComediansContestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComediansContestUITests.swift; sourceTree = "<group>"; };
 		96BADE6E1FE6BB8400DBEC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96D292CD20262FEF001C77FA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		96EDCB9E1FFD120800189D44 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		96EFCAA720010B4E0055AE3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B349801E915EAC770F626979 /* Pods-ComediansContestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComediansContestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComediansContestUITests/Pods-ComediansContestUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				961A43A9200E436E003A81C3 /* Login */,
 				96EDCB9D1FFD118B00189D44 /* Post */,
 				9654A29B1FF00082001CC27E /* Feed */,
+				96D292CD20262FEF001C77FA /* MainTabBarController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -662,6 +665,7 @@
 				961A43AD200E43A2003A81C3 /* LoginViewModel.swift in Sources */,
 				96952D4F1FFB5D17008D1CA4 /* Content.swift in Sources */,
 				96BADE4D1FE6BB8400DBEC9A /* AppDelegate.swift in Sources */,
+				96D292CE20262FEF001C77FA /* MainTabBarController.swift in Sources */,
 				969F7C071FFD4D93002DB8D0 /* SelectImageViewController.swift in Sources */,
 				9654A2931FEE9015001CC27E /* Feed.swift in Sources */,
 				9654A29D1FF000D6001CC27E /* FeedViewController.swift in Sources */,
