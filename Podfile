@@ -33,6 +33,9 @@ target 'ComediansContest' do
   pod 'FacebookLogin'
   pod 'FacebookShare'
 
+  # Twitter
+  pod 'TwitterKit'
+
   target 'ComediansContestTests' do
     inherit! :search_paths
   end

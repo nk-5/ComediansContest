@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="ComediansContest" customModuleProvider="target">
             <connections>
                 <outlet property="facebookButtonField" destination="5ay-Mx-b0P" id="SRh-Ye-JGa"/>
+                <outlet property="twitterButtonField" destination="AX9-ld-Mc4" id="ZXf-wE-DuQ"/>
                 <outlet property="view" destination="v4B-fn-tjo" id="HxH-Ym-J83"/>
             </connections>
         </placeholder>
@@ -30,21 +31,41 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="5ay-Mx-b0P">
-                            <rect key="frame" x="0.0" y="40.5" width="250" height="50"/>
+                            <rect key="frame" x="32.5" y="40.5" width="185" height="30"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="50" id="9OF-sB-mls"/>
-                                <constraint firstAttribute="width" constant="250" id="FYn-fm-jIt"/>
+                                <constraint firstAttribute="height" constant="30" id="9OF-sB-mls"/>
+                                <constraint firstAttribute="width" constant="185" id="FYn-fm-jIt"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AX9-ld-Mc4">
+                            <rect key="frame" x="32.5" y="75.5" width="185" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="62Z-TT-zWB"/>
+                                <constraint firstAttribute="width" constant="185" id="SCj-OE-CpA"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycX-9W-MlQ">
+                            <rect key="frame" x="32.5" y="110.5" width="185" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="185" id="QEp-Ss-ek8"/>
+                                <constraint firstAttribute="height" constant="30" id="Rn8-uB-mgA"/>
                             </constraints>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="AX9-ld-Mc4" firstAttribute="top" secondItem="5ay-Mx-b0P" secondAttribute="bottom" constant="5" id="ASC-Ut-Cqk"/>
                         <constraint firstAttribute="width" constant="250" id="B8y-Ts-oJA"/>
                         <constraint firstItem="rOO-nN-rJz" firstAttribute="top" secondItem="x34-zJ-vP2" secondAttribute="top" constant="10" id="HEG-00-iK4"/>
+                        <constraint firstItem="ycX-9W-MlQ" firstAttribute="top" secondItem="AX9-ld-Mc4" secondAttribute="bottom" constant="5" id="IgU-HZ-uj1"/>
                         <constraint firstAttribute="height" constant="200" id="LfX-mS-0Qy"/>
+                        <constraint firstItem="AX9-ld-Mc4" firstAttribute="centerX" secondItem="x34-zJ-vP2" secondAttribute="centerX" id="aHt-vr-dlY"/>
                         <constraint firstItem="rOO-nN-rJz" firstAttribute="centerX" secondItem="x34-zJ-vP2" secondAttribute="centerX" id="fZI-8a-XkJ"/>
                         <constraint firstItem="5ay-Mx-b0P" firstAttribute="top" secondItem="rOO-nN-rJz" secondAttribute="bottom" constant="10" id="fam-kX-jeO"/>
+                        <constraint firstItem="ycX-9W-MlQ" firstAttribute="centerX" secondItem="x34-zJ-vP2" secondAttribute="centerX" id="i7G-th-63N"/>
                         <constraint firstItem="5ay-Mx-b0P" firstAttribute="centerX" secondItem="x34-zJ-vP2" secondAttribute="centerX" id="qcj-Wg-HB5"/>
                     </constraints>
                 </view>

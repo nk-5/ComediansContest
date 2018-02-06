@@ -119,6 +119,9 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
+  - TwitterCore (3.1.0)
+  - TwitterKit (3.3.0):
+    - TwitterCore (>= 3.1.0)
   - ZFDragableModalTransition (0.6)
 
 DEPENDENCIES:
@@ -135,6 +138,7 @@ DEPENDENCIES:
   - RxCocoa (~> 4.0)
   - RxDataSources (~> 3.0)
   - RxSwift (~> 4.0)
+  - TwitterKit
   - ZFDragableModalTransition
 
 SPEC CHECKSUMS:
@@ -170,8 +174,10 @@ SPEC CHECKSUMS:
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  TwitterCore: 644d59e75abccb26cf0a9050d2c4dea0e5412241
+  TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
   ZFDragableModalTransition: 0d294eaaba6edfcb9839595de765f9ca06a4b524
 
-PODFILE CHECKSUM: 6945649ae4b272e6b5afa07e8a9503dee013485c
+PODFILE CHECKSUM: 9a6f21c5d8f5850017af1be62a2b78511e2003e3
 
 COCOAPODS: 1.3.1

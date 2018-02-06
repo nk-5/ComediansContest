@@ -6,6 +6,7 @@
 import UIKit
 import Firebase
 import FBSDKCoreKit
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
 
         FBSDKApplicationDelegate.sharedInstance().application(app, didFinishLaunchingWithOptions: options)
+
+        TWTRTwitter.sharedInstance().start(withConsumerKey: "6qalTk59S7GE5tQAQ1RzDiAKK", consumerSecret: "3DifoWR7ZRadkee0knqo61G9cchLnsxNRbC0yuVOpHtw1DuOdM")
+
         return true
     }
 
