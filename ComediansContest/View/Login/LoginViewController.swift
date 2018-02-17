@@ -24,11 +24,11 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
         facebookButtonField.addSubview(facebookLoginButton)
 
         // Twitter login Button
-        let twitterLoginButton = TWTRLogInButton(logInCompletion: { session, _ in
+        let twitterLoginButton = TWTRLogInButton(logInCompletion: { session, error in
             if session != nil {
                 print("success")
             } else {
-                print("failed")
+                print("failed: \(error)")
             }
         })
         twitterLoginButton.frame = CGRect(x: 0, y: 0, width: twitterButtonField.frame.width, height: twitterButtonField.frame.height)
